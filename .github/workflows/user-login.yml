@@ -30,7 +30,7 @@ jobs:
     # Executar a coleção com ambiente especificado
     - name: Execute collection
       run: |
-        newman run testes-api-postman/Users_Login.json -g  testes-api-postman/Users_env_globais.json --reporters cli,htmlextra --reporter-htmlextra-export testes-api-postman/results/docs/index.html
+        newman run testes-api-postman/Users_Login.json -g  testes-api-postman/Users_env_globais.json --reporters cli,htmlextra --reporter-htmlextra-export testes-api-postman/docs/index.html
 
     # Carregar relatório de teste
     - name: Upload Test Report
